@@ -106,7 +106,7 @@
         
         .hero {
             position: relative;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-panel.jpg') center/cover;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.6) 100%), url('images/hero-panel.jpg') center/cover;
             color: #fff;
             padding: 80px 20px 80px;
             text-align: center;
@@ -115,6 +115,9 @@
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
+            background: rgba(0,0,0,0.4);
+            padding: 30px 40px;
+            border-radius: 8px;
         }
         
         .hero h1 {
@@ -122,12 +125,14 @@
             margin-bottom: 16px;
             line-height: 1.2;
             font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
         }
         
         .hero-tagline {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-bottom: 30px;
-            opacity: 0.95;
+            color: #fff;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.9);
         }
         
         .trust-strip {
@@ -383,12 +388,16 @@
         }
         
         @media (max-width: 768px) {
+            .hero-content {
+                padding: 25px 30px;
+            }
+            
             .hero h1 {
                 font-size: 2em;
             }
             
             .hero-tagline {
-                font-size: 1.05em;
+                font-size: 1.15em;
             }
             
             h2 {
@@ -435,8 +444,16 @@
                 padding: 60px 15px;
             }
             
+            .hero-content {
+                padding: 20px 20px;
+            }
+            
             .hero h1 {
                 font-size: 1.75em;
+            }
+            
+            .hero-tagline {
+                font-size: 1.1em;
             }
             
             .btn {
