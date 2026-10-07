@@ -21,7 +21,7 @@
         
         .draft-banner {
             background: #fef3cd;
-            border-bottom: 3px solid #ffc107;
+            border-bottom: 3px solid #d4a617;
             padding: 12px 20px;
             text-align: center;
             font-weight: 600;
@@ -35,7 +35,7 @@
         header {
             background: #1a1a1a;
             color: #fff;
-            padding: 15px 20px;
+            padding: 16px 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         
@@ -45,81 +45,53 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
         }
         
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #ffc107;
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
         
         .header-phone {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             color: #fff;
             text-decoration: none;
+            white-space: nowrap;
         }
         
         .header-phone:hover {
-            color: #ffc107;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .hero-intro {
-            font-size: 1.1em;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            line-height: 1.8;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 30px;
+            color: #d4a617;
         }
         
         .btn {
             display: inline-block;
-            padding: 14px 28px;
+            padding: 12px 24px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 15px;
             transition: all 0.3s ease;
+            border: 2px solid transparent;
+            white-space: nowrap;
         }
         
         .btn-primary {
-            background: #ffc107;
+            background: #d4a617;
             color: #1a1a1a;
         }
         
         .btn-primary:hover {
-            background: #ffcd38;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(255,193,7,0.3);
+            background: #e0b520;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(212,166,23,0.3);
         }
         
         .btn-secondary {
@@ -129,105 +101,247 @@
         }
         
         .btn-secondary:hover {
-            background: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-panel.jpg') center/cover;
+            color: #fff;
+            padding: 80px 20px 80px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        
+        .hero-tagline {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .trust-strip {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .trust-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .trust-item strong {
             color: #1a1a1a;
         }
         
-        .content-section {
-            margin-bottom: 50px;
+        .stars {
+            color: #d4a617;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-intro {
+            background: #fff;
+            padding: 50px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .section-intro .container {
+            padding: 0 20px;
         }
         
         h2 {
             font-size: 2em;
             color: #1a1a1a;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #ffc107;
+            font-weight: 700;
         }
         
         h3 {
-            font-size: 1.5em;
+            font-size: 1.4em;
             color: #2c3e50;
-            margin: 30px 0 15px;
-        }
-        
-        h4 {
-            font-size: 1.2em;
-            color: #34495e;
-            margin: 20px 0 10px;
+            margin: 30px 0 12px;
             font-weight: 600;
         }
         
         p {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             line-height: 1.8;
+            color: #555;
         }
         
-        .info-box {
-            background: #f8f9fa;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .content-with-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .content-with-image.reverse {
+            direction: rtl;
+        }
+        
+        .content-with-image.reverse > * {
+            direction: ltr;
         }
         
         .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 25px;
             margin: 30px 0;
         }
         
         .feature-card {
             background: #f8f9fa;
-            padding: 25px;
+            padding: 30px;
             border-radius: 8px;
-            border-top: 4px solid #ffc107;
+            border-left: 4px solid #d4a617;
+        }
+        
+        .feature-card h4 {
+            font-size: 1.2em;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .feature-card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        .info-box {
+            background: #fff9e6;
+            border-left: 4px solid #d4a617;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .info-box p {
+            margin-bottom: 0;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            margin: 60px 0 0;
+        }
+        
+        .cta-section h2 {
+            color: #d4a617;
+            margin-bottom: 16px;
+        }
+        
+        .cta-section p {
+            color: #fff;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .areas-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .area-tag {
+            background: #f8f9fa;
+            color: #1a1a1a;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+            border: 1px solid #e0e0e0;
         }
         
         .faq-section {
             background: #f8f9fa;
-            padding: 40px 20px;
-            border-radius: 8px;
-            margin: 40px 0;
+            padding: 50px 20px;
+            margin-top: 60px;
+        }
+        
+        .faq-content {
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .faq-item {
-            margin-bottom: 25px;
+            background: #fff;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #d4a617;
         }
         
         .faq-question {
             font-weight: 600;
             color: #1a1a1a;
             margin-bottom: 8px;
-            font-size: 1.1em;
+            font-size: 1.05em;
         }
         
         .faq-answer {
             color: #555;
-            line-height: 1.8;
-        }
-        
-        .areas-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .area-tag {
-            background: #ffc107;
-            color: #1a1a1a;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: 500;
+            line-height: 1.7;
         }
         
         footer {
             background: #1a1a1a;
             color: #fff;
-            padding: 40px 20px;
-            margin-top: 60px;
+            padding: 50px 20px 30px;
         }
         
         .footer-content {
@@ -235,12 +349,14 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            gap: 40px;
+            margin-bottom: 30px;
         }
         
         .footer-section h4 {
-            color: #ffc107;
-            margin-bottom: 15px;
+            color: #d4a617;
+            margin-bottom: 16px;
+            font-size: 1.1em;
         }
         
         .footer-section p,
@@ -249,23 +365,30 @@
             text-decoration: none;
             display: block;
             margin-bottom: 8px;
+            font-size: 15px;
         }
         
         .footer-section a:hover {
-            color: #ffc107;
+            color: #d4a617;
         }
         
         .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
+            padding-top: 30px;
             border-top: 1px solid #333;
             color: #999;
+            font-size: 14px;
         }
         
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 1.8em;
+                font-size: 2em;
+            }
+            
+            .hero-tagline {
+                font-size: 1.05em;
             }
             
             h2 {
@@ -273,16 +396,56 @@
             }
             
             .header-content {
-                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
                 text-align: center;
             }
             
-            .cta-buttons {
+            .header-right {
                 flex-direction: column;
+                width: 100%;
             }
             
             .btn {
                 width: 100%;
+                text-align: center;
+            }
+            
+            .trust-content {
+                gap: 20px;
+                font-size: 13px;
+            }
+            
+            .content-with-image {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+        }
+        
+        @media (max-width: 390px) {
+            .hero {
+                padding: 60px 15px;
+            }
+            
+            .hero h1 {
+                font-size: 1.75em;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            .feature-card {
+                padding: 20px;
             }
         }
     </style>
@@ -294,81 +457,105 @@
     
     <header>
         <div class="header-content">
-            <div class="logo">Next Phase Electric</div>
-            <a href="tel:+16026767433" class="header-phone">📞 (602) 676-7433</a>
+            <img src="images/logo.jpeg" alt="Next Phase Electric" class="logo-img">
+            <div class="header-right">
+                <a href="tel:+16026767433" class="header-phone">(602) 676-7433</a>
+                <a href="https://www.npelectricaz.com" class="btn btn-primary">Book Online</a>
+            </div>
         </div>
     </header>
     
     <div class="hero">
+        <div class="hero-content">
+            <h1>Panel Upgrades for Queen Creek Homes</h1>
+            <p class="hero-tagline">Licensed electrician serving the East Valley. Permitted upgrades, clear labeling, lifetime workmanship warranty.</p>
+            <a href="https://www.npelectricaz.com" class="btn btn-primary">Book Online</a>
+        </div>
+    </div>
+    
+    <div class="trust-strip">
+        <div class="trust-content">
+            <div class="trust-item"><strong>ROC #359443</strong></div>
+            <div class="trust-item">• Queen Creek based</div>
+            <div class="trust-item">• Free estimates</div>
+            <div class="trust-item">• Lifetime workmanship</div>
+            <div class="trust-item"><span class="stars">★★★★★</span> 5.0</div>
+        </div>
+    </div>
+    
+    <div class="section-intro">
         <div class="container">
-            <h1>Electrical Panel Upgrades in Queen Creek and the East Valley</h1>
-            <p class="hero-intro">Next Phase Electric is a Queen Creek based, licensed Arizona electrician (ROC #359443) serving East Valley homeowners who need a safer, higher capacity panel. Tell us what is going on. We assess your load, size the right equipment, pull permits, coordinate the utility when needed, and label every circuit before we close out. Book online for a free estimate, or call (602) 676-7433.</p>
-            <div class="cta-buttons">
-                <a href="https://www.npelectricaz.com" class="btn btn-primary">Book Online</a>
-                <a href="https://www.npelectricaz.com/contact-us" class="btn btn-secondary">Contact Us</a>
-                <a href="tel:+16026767433" class="btn btn-secondary">Call Now</a>
-            </div>
+            <p>Next Phase Electric is a Queen Creek based, licensed Arizona electrician (ROC #359443) serving East Valley homeowners who need a safer, higher capacity panel. Tell us what is going on. We assess your load, size the right equipment, pull permits, coordinate the utility when needed, and label every circuit before we close out. Book online for a free estimate, or call (602) 676-7433.</p>
         </div>
     </div>
     
     <div class="container">
-        <section class="content-section">
+        <section class="section">
             <h2>Signs your East Valley home needs a panel upgrade</h2>
-            <p>You may need a panel upgrade if your breakers trip when the AC and kitchen run together, lights flicker under load, the panel cover feels warm, a home inspection flagged capacity or obsolete equipment, or you are planning a Level 2 EV charger, kitchen remodel, pool equipment, shop circuits, or an ADU. Many Queen Creek, Gilbert, San Tan Valley, Chandler, and Mesa homes still run on original capacity that fit the day they were built, not today's heat loads and add ons.</p>
-            <div class="info-box">
-                <p><strong>This is a diagnostic check, not a scare pitch.</strong> Next Phase Electric starts with an on site load check so you know whether a repair, a breaker change, or a full upgrade is the honest path.</p>
+            <p>You may need a panel upgrade if your breakers trip when the AC and kitchen run together, lights flicker under load, the panel cover feels warm, or a home inspection flagged capacity concerns.</p>
+            
+            <div class="content-with-image">
+                <div>
+                    <p>Many Queen Creek, Gilbert, San Tan Valley, Chandler, and Mesa homes still run on original capacity that fit the day they were built, not today's heat loads and add ons. Planning a Level 2 EV charger, kitchen remodel, pool equipment, shop circuits, or an ADU often triggers the need for more capacity.</p>
+                    <div class="info-box">
+                        <p><strong>This is a diagnostic check, not a scare pitch.</strong> Next Phase Electric starts with an on site load check so you know whether a repair, a breaker change, or a full upgrade is the honest path.</p>
+                    </div>
+                </div>
+                <img src="images/panel-install.jpg" alt="Electrical panel installation in progress">
             </div>
         </section>
         
-        <section class="content-section">
+        <section class="section">
             <h2>What a panel upgrade includes</h2>
             <div class="feature-grid">
                 <div class="feature-card">
                     <h4>Load assessment</h4>
-                    <p>We look at your current amperage, available breaker spaces, and what you plan to add. Tell us about EV charging, HVAC, a remodel, a pool, or a shop. That list drives the size of the panel, not a one size fits all sales chart.</p>
+                    <p>We look at your current amperage, available breaker spaces, and what you plan to add. That list drives the size of the panel, not a one size fits all sales chart.</p>
                 </div>
                 <div class="feature-card">
                     <h4>Right sized equipment</h4>
-                    <p>When load requires it, a common path is moving from 100 amp service to 200 amp service. We size to your home. We do not push a larger panel than the calculation supports.</p>
+                    <p>When load requires it, a common path is moving from 100 amp service to 200 amp service. We size to your home, not a push.</p>
                 </div>
                 <div class="feature-card">
-                    <h4>Permits, utility coordination, and inspection</h4>
-                    <p>Panel upgrades need a municipal permit and inspection. Next Phase Electric pulls the permit and coordinates the inspection path so you are not left chasing the town. If the utility needs a meter or service change, we manage that handoff and build it into the timeline in your quote.</p>
+                    <h4>Permits & coordination</h4>
+                    <p>Panel upgrades need a municipal permit and inspection. We pull the permit and coordinate the inspection path so you are not left chasing the town.</p>
                 </div>
                 <div class="feature-card">
                     <h4>Labeling and testing</h4>
-                    <p>Before we finish, circuits are labeled clearly and the work is tested. You should leave knowing what each breaker does and what changed in the panel.</p>
+                    <p>Before we finish, circuits are labeled clearly and the work is tested. You should leave knowing what each breaker does.</p>
                 </div>
             </div>
         </section>
         
-        <section class="content-section">
-            <h2>Panel upgrades for EV chargers, remodels, and Arizona heat loads</h2>
-            <p>East Valley summers already ask a lot of a home electrical system: multiple HVAC runs, kitchen loads, and overnight charging on top. A Level 2 EV charger plus AC at the same time is a capacity question, not a guessing game. Sometimes the existing panel can carry it. Sometimes the honest first step is a panel upgrade, then the charger circuit.</p>
-            <p>We handle both. See our EV charger installation page for Level 2 details. Remodel circuits are covered on our remodeling page. If you also want whole home surge protection discussed with the upgrade, ask on the estimate visit.</p>
-        </section>
-        
-        <section class="content-section">
-            <h2>How long it takes and what to expect the day of</h2>
-            <p>Most residential panel upgrades take about one day of on site work. Utility coordination or a meter change can add time. Your written quote includes the expected outage window so you can plan fridge food, work from home, and medical devices before we shut power down.</p>
-            <p>Day of, we protect the work area, complete the swap and labeling, and leave you with a clear path to inspection. Exact timing is in the quote, not a generic promise.</p>
-            <div class="info-box">
-                <p>If you need temporary power notes for medical equipment, a home office, or food storage, say so when you book. We plan the outage window around what matters in your house that day. For longer outage planning or backup power questions, see our generators page.</p>
+        <section class="section">
+            <div class="content-with-image reverse">
+                <img src="images/panel-detail.jpg" alt="Clean electrical panel with labeled circuits">
+                <div>
+                    <h2>Panel upgrades for EV chargers and Arizona heat loads</h2>
+                    <p>East Valley summers already ask a lot of a home electrical system: multiple HVAC runs, kitchen loads, and overnight charging on top.</p>
+                    <p>A Level 2 EV charger plus AC at the same time is a capacity question, not a guessing game. Sometimes the existing panel can carry it. Sometimes the honest first step is a panel upgrade, then the charger circuit. We handle both.</p>
+                </div>
             </div>
         </section>
         
-        <section class="content-section">
-            <h2>Cost and estimates</h2>
-            <p>We do not publish a fixed dollar range for panel upgrades. Amperage path, panel location, utility involvement, and add ons change the scope. You get a written estimate after the on site load check. Free estimates are available across our East Valley service area.</p>
+        <section class="section">
+            <div class="content-with-image">
+                <div>
+                    <h2>How long it takes and what to expect</h2>
+                    <p>Most residential panel upgrades take about one day of on site work. Utility coordination or a meter change can add time. Your written quote includes the expected outage window so you can plan fridge food, work from home, and medical devices before we shut power down.</p>
+                    <p>Day of, we protect the work area, complete the swap and labeling, and leave you with a clear path to inspection.</p>
+                </div>
+                <img src="images/exterior-panel.jpg" alt="Exterior electrical panel installation">
+            </div>
         </section>
         
-        <section class="content-section">
+        <section class="section">
             <h2>Why homeowners choose Next Phase Electric</h2>
-            <p>Licensed and insured in Arizona (ROC #359443). Queen Creek based, serving the East Valley. Plain language options before you approve work. Free estimates for panel upgrades and other electrical work. Lifetime workmanship warranty on our work. Book online through Housecall Pro, or call (602) 676-7433.</p>
+            <p>Licensed and insured in Arizona (ROC #359443). Queen Creek based, serving the East Valley. Plain language options before you approve work. Free estimates for panel upgrades and other electrical work. Lifetime workmanship warranty on our work.</p>
             <p><strong>We show up, explain what we found, and finish so you are not living with a half fix.</strong></p>
         </section>
         
-        <section class="content-section">
+        <section class="section">
             <h2>Areas we serve</h2>
             <div class="areas-list">
                 <span class="area-tag">Queen Creek</span>
@@ -379,8 +566,10 @@
             </div>
             <p>We serve Queen Creek, Gilbert, San Tan Valley, Chandler, and Mesa for permitted panel upgrades and related electrical work. Ask when you book if your address sits just outside that map.</p>
         </section>
-        
-        <div class="faq-section">
+    </div>
+    
+    <div class="faq-section">
+        <div class="faq-content">
             <h2>Panel upgrade FAQs</h2>
             
             <div class="faq-item">
@@ -404,25 +593,19 @@
             </div>
             
             <div class="faq-item">
-                <div class="faq-question">Can a panel upgrade support an EV charger later?</div>
-                <div class="faq-answer">Yes. We size and label with future load in mind when you share EV or remodel plans up front.</div>
-            </div>
-            
-            <div class="faq-item">
                 <div class="faq-question">Can my panel support a Level 2 EV charger and AC at the same time?</div>
-                <div class="faq-answer">Sometimes yes, sometimes no. It depends on amperage, available breaker spaces, and the rest of the home's load. A licensed electrician runs a load calculation before installing a charger. If capacity is short, the panel upgrade comes first, then the EV circuit. We will tell you which path fits before any install.</div>
+                <div class="faq-answer">Sometimes yes, sometimes no. It depends on amperage, available breaker spaces, and the rest of the home's load. A licensed electrician runs a load calculation before installing a charger. If capacity is short, the panel upgrade comes first, then the EV circuit.</div>
             </div>
         </div>
-        
-        <section class="content-section" style="background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%); color: #fff; padding: 40px; border-radius: 8px; text-align: center;">
-            <h2 style="color: #ffc107; border: none;">Ready for a written estimate?</h2>
-            <p style="font-size: 1.1em; margin-bottom: 30px;">Pricing is quoted after an on site load check, not guessed from a blog range. Book online for a free estimate, contact us, or call (602) 676-7433.</p>
-            <div class="cta-buttons">
-                <a href="https://www.npelectricaz.com" class="btn btn-primary">Book Online</a>
-                <a href="https://www.npelectricaz.com/contact-us" class="btn btn-secondary">Contact Us</a>
-                <a href="tel:+16026767433" class="btn btn-secondary">Call (602) 676-7433</a>
-            </div>
-        </section>
+    </div>
+    
+    <div class="cta-section">
+        <h2>Ready for a written estimate?</h2>
+        <p>Pricing is quoted after an on site load check, not guessed from a blog range.</p>
+        <div class="cta-buttons">
+            <a href="https://www.npelectricaz.com" class="btn btn-primary">Book Online</a>
+            <a href="tel:+16026767433" class="btn btn-secondary">Call (602) 676-7433</a>
+        </div>
     </div>
     
     <footer>
@@ -448,7 +631,8 @@
             
             <div class="footer-section">
                 <h4>Service Areas</h4>
-                <p>Queen Creek • Gilbert • San Tan Valley<br>Chandler • Mesa</p>
+                <p>Queen Creek • Gilbert<br>San Tan Valley • Chandler • Mesa</p>
+                <a href="https://www.npelectricaz.com" class="btn btn-primary" style="margin-top: 15px; display: inline-block;">Book Online</a>
             </div>
         </div>
         
